@@ -1,4 +1,5 @@
 [![Build Status](https://dev.azure.com/xlorganization/ManageEmployee/_apis/build/status/xiaolin-zhu.ManageEmployees?branchName=master)](https://dev.azure.com/xlorganization/ManageEmployee/_build/latest?definitionId=1&branchName=master)
+
 # EmployeeManagementPage
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.4.
