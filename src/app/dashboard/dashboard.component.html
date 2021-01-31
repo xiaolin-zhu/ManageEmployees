@@ -1,0 +1,16 @@
+<h3>Employees Dashboard</h3>
+<div class="grid grid-pad">
+  <a *ngFor="let employee of employees" class="col-1-4" routerLink="/detail/{{employee.id}}">
+    <div class="module employee">
+        Name: {{employee.Name}}<br/>
+        Age: {{employee.Age}}<br/>
+        Sex: {{employee.Sex}}<br/>
+        Level: {{employee.Level}}<br/>
+        IsAdmin: {{employee.IsAdmin}}
+    </div>
+  </a>
+</div>
+
+<div>
+  <app-employee-search></app-employee-search>
+</div>

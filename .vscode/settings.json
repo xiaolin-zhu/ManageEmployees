@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/9aca403d-1638-494d-85b0-cb8ed410f394/resourceGroups/MyTestResource/providers/Microsoft.Web/sites/ManageEmployee",
+    "appService.deploySubpath": "dist\\EmployeeManagement-Page"
+}

@@ -1,0 +1,18 @@
+<h2>Employees</h2>
+<div class ="add-employee">
+  <app-dynamic-form [questions]="questions$ | async" (newItemEvent)="addItem($event)"></app-dynamic-form>
+  <!-- (click) passes input value to add() and then clears the input -->
+<!--   <button (click)="add(employeeName.value); employeeName.value=''">
+    add
+  </button> -->
+</div>
+<div>
+<ul class="employees">
+  <li *ngFor="let employee of employees" [class.selected]="employee === selectedEmployee" (click)="onSelect(employee)">
+    <a routerLink="/detail/{{employee.id}}">
+      <span class="badge">{{employee.id}}</span> {{employee.Name}}
+    </a>
+    <button class="delete" title="delete employee" (click)="delete(employee)">x</button>
+  </li>
+</ul>
+</div>

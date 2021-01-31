@@ -1,0 +1,22 @@
+<div *ngIf="employee">
+
+  <h2>{{employee.Name}}'s Details</h2>
+  <div><span>id: </span>{{employee.id}}</div>
+  <div>
+    <label>name:
+      <input [(ngModel)]="employee.Name" placeholder="name"/>
+    </label>
+  </div>
+  <div>
+    <label>age:
+      <input [(ngModel)]="employee.Age" placeholder="age"/>
+    </label>
+  </div>
+  <div><span>Sex: </span>{{employee.Sex}}</div>
+  <div><span>Level: </span>{{employee.Level}}</div>
+  <div><span>IsAdmin: </span>{{employee.IsAdmin}}</div>
+
+  <button (click)="goBack()">go back</button>
+  <button (click)="save()">save</button>
+
+</div>
